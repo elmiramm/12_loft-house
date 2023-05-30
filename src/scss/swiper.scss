@@ -1,0 +1,33 @@
+@import "../../node_modules/swiper/swiper-vars.scss";
+@import "../../node_modules/swiper/swiper.scss";
+
+.swiper {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.swiper-pagination-bullets {
+	display: flex;
+	gap: 30px;
+}
+.swiper-pagination-bullet {
+	cursor: pointer;
+	flex: 0 0 8px;
+	height: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&::after {
+		content: "";
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		transition: background-color 0.3 ease;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	&::after {
+		background-color: $accentColor;
+	}
+}
