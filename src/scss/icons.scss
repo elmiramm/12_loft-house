@@ -29,7 +29,7 @@
 }
 
 .icon-bench:before {
-	content: "\e900";
+content: "\e900";
  }
  .icon-bicycle:before {
 	content: "\e901";
@@ -64,4 +64,10 @@
  .icon-youtube:before {
 	content: "\e90b";
  }
+ 
+ .intro__link::before {
+	font-size: 40px;
+	color: $accentColor;
+ }
+
  
