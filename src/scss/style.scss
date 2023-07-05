@@ -19,9 +19,9 @@ $bp320: 319.98px;
 $burgerBP: $bp480;
 //------Vars-End------ 
 
-@import "fonts.scss";
-@import "icons.scss"; 
-@import "swiper.scss";
+@import "fonts";
+@import "icons"; 
+@import "swiper";
 
 html {
 	box-sizing: border-box;
@@ -163,12 +163,12 @@ select {
 	color: $accentColor;
 }
 
-@import "header.scss";
-@import "footer.scss";
+@import "header";
+@import "footer";
 
 // -----Общие блоки-End -----
 
-@import "social.scss";
+@import "social";
 
 
 // Adaptive 
