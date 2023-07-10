@@ -128,28 +128,15 @@ select {
 	
 	font-size: 14px;
 	line-height: 1.93;
-	color: #BEBEBE;
-	background-color: rgba($color: $mainTextColor, $alpha: 0.2);
+	font-weight: 700;
+	color: $mainTextColor;
+	background-color: $accentColor;
+	transition: background-color 0.3s ease;
 	
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $mainTextColor;
-			color: $accentColor;
+			background-color: saturate($color: $accentColor, $amount: 20%);
 		}
-	}
-	&--yellow {
-		font-size: 16px;
-		line-height: 1.69;
-		font-weight: 700;
-		background-color: $accentColor;
-		color: $mainTextColor;
-			
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: $mainTextColor;
-			color: $accentColor;
-		}
-	}
 	}
 }
 
@@ -172,6 +159,8 @@ select {
 @import "benefits";
 @import "appartments";
 @import "cards";
+@import "cta";
+@import "form";
 
 @import "social";
 

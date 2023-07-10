@@ -1,0 +1,27 @@
+.cta {
+	padding: 180px 0;
+	background: linear-gradient(
+		180deg, 
+		#242B33 10.42%, 
+		rgba(36, 43, 51, 0.00) 50.52%, 
+		#242B33 90.10%
+		), 
+		linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%), 
+		url(../img/cta-bg.jpg),
+		50% / cover no-repeat, 
+		#C4C4C4;
+	
+		&__title {
+			margin-bottom: 17px;
+		}
+		&__inner {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px;
+		}
+		&__form {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 35px 30px;
+		}
+}

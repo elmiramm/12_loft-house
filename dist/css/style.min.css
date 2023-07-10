@@ -407,26 +407,14 @@ select {
   transition: all 0.3s ease;
   font-size: 14px;
   line-height: 1.93;
-  color: #BEBEBE;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  color: #fff;
+  background-color: #D4C17F;
+  transition: background-color 0.3s ease;
 }
 @media (any-hover: hover) {
   .btn:hover {
-    background-color: #fff;
-    color: #D4C17F;
-  }
-}
-.btn--yellow {
-  font-size: 16px;
-  line-height: 1.69;
-  font-weight: 700;
-  background-color: #D4C17F;
-  color: #fff;
-}
-@media (any-hover: hover) {
-  .btn--yellow:hover {
-    background-color: #fff;
-    color: #D4C17F;
+    background-color: #e5ca6e;
   }
 }
 
@@ -659,6 +647,55 @@ select {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.16;
+}
+
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url(../img/cta-bg.jpg), 50%/cover no-repeat, #C4C4C4;
+}
+.cta__title {
+  margin-bottom: 17px;
+}
+.cta__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+
+.form__input {
+  min-height: 50px;
+  min-width: 255px;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.9;
+  font-style: normal;
+  color: #fff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+.form__input::placeholder {
+  font-size: 14px;
+  line-height: 1.9;
+  font-style: normal;
+  color: #BEBEBE;
+}
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.form__privacy {
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: 400;
+  font-style: normal;
+  color: #E7E7E7;
 }
 
 .social {
