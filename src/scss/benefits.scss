@@ -1,0 +1,24 @@
+.benefits {
+	padding: 120px 0;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		text-align: center;
+	}
+	&__item-icon {
+		font-size: 80px;
+		color: $accentColor;
+
+		margin-bottom: 53px;
+	}
+	&__item-text {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		line-height: 1.35;
+		font-weight: 300;
+		font-style: normal;
+	}
+}

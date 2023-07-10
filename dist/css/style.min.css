@@ -578,6 +578,30 @@ select {
   transition: color 0.3s ease;
 }
 
+.benefits {
+  padding: 120px 0;
+}
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits__item {
+  text-align: center;
+}
+.benefits__item-icon {
+  font-size: 80px;
+  color: #D4C17F;
+  margin-bottom: 53px;
+}
+.benefits__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .social {
   display: flex;
   gap: 36px;
