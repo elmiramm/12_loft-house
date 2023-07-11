@@ -25,10 +25,14 @@
 	&__link {
 		display: inline-block;
 		margin-bottom: 200px;
+		&::before {
+			font-size: 40px;
+			color: $accentColor;
+			transition: all 0.3s ease;
+		}
 
 		&:hover::before{
-				color: $mainTextColor;
-				transition: color 0.3s ease;
+			color: $mainTextColor;
 		}
 	}
 	&__contacts {
@@ -45,13 +49,5 @@
 		justify-content: center;
 		font-size: 21px;
 		gap: 14px;
-		&:hover {
-			color: $accentColor;
-			transition: color 0.3s ease;
-		}
-		&:hover::before{
-			color: $accentColor;
-			transition: color 0.3s ease;
-		}
 	}
 }

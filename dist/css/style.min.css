@@ -104,11 +104,6 @@
   content: "\e90b";
 }
 
-.intro__link::before {
-  font-size: 40px;
-  color: #D4C17F;
-}
-
 /**
  * Swiper 8.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -339,6 +334,9 @@ a {
   color: inherit;
   transition: all 0.3s ease;
 }
+a:hover {
+  color: #D4C17F;
+}
 
 h1,
 h2,
@@ -446,11 +444,7 @@ select {
 .menu__list-link {
   font-size: 14px;
   line-height: 1.14;
-}
-@media (any-hover: hover) {
-  .menu__list-link:hover {
-    color: #D4C17F;
-  }
+  letter-spacing: 0.05rem;
 }
 
 .burger {
@@ -508,7 +502,30 @@ select {
 }
 
 .footer {
-  background: #000;
+  padding: 72px 0 61px;
+  background: #2D343C;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer__logo {
+  margin-top: -12px;
+}
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer__nav-mail {
+  color: #D4C17F;
+  transition: all 3s ease;
+  font-weight: 700;
+}
+.footer__nav-mail:hover {
+  color: #e5ca6e;
+  text-decoration: underline;
 }
 
 .intro {
@@ -538,9 +555,13 @@ select {
   display: inline-block;
   margin-bottom: 200px;
 }
+.intro__link::before {
+  font-size: 40px;
+  color: #D4C17F;
+  transition: all 0.3s ease;
+}
 .intro__link:hover::before {
   color: #fff;
-  transition: color 0.3s ease;
 }
 .intro__contacts {
   display: flex;
@@ -554,14 +575,6 @@ select {
   justify-content: center;
   font-size: 21px;
   gap: 14px;
-}
-.intro__contacts-icon:hover {
-  color: #D4C17F;
-  transition: color 0.3s ease;
-}
-.intro__contacts-icon:hover::before {
-  color: #D4C17F;
-  transition: color 0.3s ease;
 }
 
 .benefits {
@@ -704,6 +717,7 @@ select {
 .video__link {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 .video__link::before {
   position: absolute;
@@ -734,6 +748,10 @@ select {
   color: #e5ca6e;
   transform: translate(-50%, -50%) scale(1.1);
 }
+.video__link:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
 .section-map {
   padding: 180px 0;
@@ -762,26 +780,28 @@ select {
 
 .social {
   display: flex;
-  gap: 36px;
+  gap: 22px;
   align-items: center;
-  margin-bottom: 21px;
+  margin-top: 20px;
 }
 .social__link {
   transition: all 0.3s ease;
+}
+.social__link::before {
+  font-size: 20px;
 }
 .social__link--facebook:hover {
   color: #3b5998;
   transition: all 0.3s ease;
 }
 .social__link--insta:hover {
-  color: #e6683c;
+  color: #C13584;
 }
-.social__link--pinterest:hover {
-  color: #D32F2F;
-  transition: all 0.3s ease;
+.social__link--insta {
+  font-size: 25px;
 }
-.social__link--whatsapp:hover {
-  color: #40C351;
+.social__link--vk:hover {
+  color: #4C75A3;
   transition: all 0.3s ease;
 }
 .social__link--youtube:hover {

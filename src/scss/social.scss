@@ -1,24 +1,26 @@
 .social {
 	display: flex;
-	gap: 36px;
+	gap: 22px;
 	align-items: center;
-	margin-bottom: 21px;
+	margin-top: 20px;
 	
 	&__link {
 		transition: all 0.3s ease;
+		&::before {
+			font-size: 20px;
+		}
 		&--facebook:hover {
 			color: #3b5998;
 			transition: all 0.3s ease;
 		}
 		&--insta:hover {
-			color: #e6683c;
+			color: #C13584;
 		}
-		&--pinterest:hover {
-			color: #D32F2F;
-			transition: all 0.3s ease;
+		&--insta {
+			font-size: 25px;
 		}
-		&--whatsapp:hover {
-			color: #40C351;
+		&--vk:hover {
+			color: #4C75A3;
 			transition: all 0.3s ease;
 		}
 		&--youtube:hover {

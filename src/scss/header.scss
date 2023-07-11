@@ -17,12 +17,7 @@
 	&__list-link {
 		font-size: 14px;
 		line-height: 1.14;
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: $accentColor;
-			}
-		}
+		letter-spacing: 0.05rem;
 	}
 }
 

@@ -1,3 +1,29 @@
 .footer {
-	background: #000;
+	padding: 72px 0 61px;
+	background: #2D343C;
+
+	font-size: 14px;
+	letter-spacing: 0.05rem;
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+	}
+	&__logo {
+		margin-top: -12px;
+	}
+	&__nav-item {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	&__nav-mail {
+		color: $accentColor;
+		transition: all 3s ease;
+		font-weight: 700;
+		&:hover {
+			color: saturate($color: $accentColor, $amount: 20%);
+			text-decoration: underline;
+		}
+	}
 }

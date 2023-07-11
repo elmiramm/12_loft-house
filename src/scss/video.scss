@@ -3,6 +3,8 @@
 	&__link {
 		position: relative;
 		display: inline-block;
+		overflow: hidden;
+		
 		&::before {
 			position: absolute;
 			left: 50%;
@@ -33,6 +35,10 @@
 		&:hover::before {
 			color: saturate($color: $accentColor, $amount: 20%);
 			transform: translate(-50%, -50%) scale(1.1);
+		}
+		&:hover img {
+			transform: scale(1.1);
+			transition: all 0.3s ease;
 		}
 	}
 }
