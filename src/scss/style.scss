@@ -19,6 +19,19 @@ $bp320: 319.98px;
 $burgerBP: $bp480;
 //------Vars-End------ 
 
+@mixin decorNumber {
+	color: #FFF;
+	opacity: 0.02;
+	font-family: Playfair Display;
+	font-size: 400px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.15;
+
+	position: absolute;
+	top: 0;
+}
+
 @import "fonts";
 @import "icons"; 
 @import "swiper";

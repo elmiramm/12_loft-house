@@ -812,9 +812,11 @@ select {
   font-size: 400px;
   font-style: normal;
   font-weight: 700;
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
   line-height: 1;
   z-index: 1;
-  position: absolute;
   top: 180px;
   right: calc(50% + 550px);
   transform: translateX(50%);

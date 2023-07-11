@@ -3,16 +3,7 @@
 	position: relative;
 	&::before {
 		content: "II";
-		color: #FFF;
-		opacity: 0.02;
-		font-family: Playfair Display;
-		font-size: 400px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 1.15;
-
-		position: absolute;
-		top: 0;
+		@include decorNumber;
 		left: calc(50% + 550px);
 		transform: translateX(-50%);
 	}

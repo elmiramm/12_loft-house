@@ -3,16 +3,11 @@
 	position: relative;
 	&::before {
 		content: "V";
-		color: #FFF;
-		opacity: 0.02;
-		font-family: Playfair Display;
-		font-size: 400px;
-		font-style: normal;
-		font-weight: 700;
+		
+		@include decorNumber;
+
 		line-height: 1;
 		z-index: 1;
-
-		position: absolute;
 		top: 180px;
 		right: calc(50% + 550px);
 		transform: translateX(50%);
@@ -20,7 +15,7 @@
 	&__title {
 		margin-bottom: 88px;
 		position: relative;
-	z-index: 2;
+		z-index: 2;
 	}
 }
 
