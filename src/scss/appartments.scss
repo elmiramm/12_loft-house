@@ -1,4 +1,20 @@
 .appartments {
+	position: relative;
+	&::before {
+		content: "III";
+		color: #FFF;
+		opacity: 0.02;
+		font-family: Playfair Display;
+		font-size: 400px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 1.15;
+
+		position: absolute;
+		top: 0;
+		right: calc(50% + 550px);
+		transform: translateX(50%);
+	}
 	&__title {
 		margin-bottom: 88px;
 	}

@@ -579,6 +579,21 @@ select {
 
 .benefits {
   padding: 120px 0;
+  position: relative;
+}
+.benefits::before {
+  content: "II";
+  color: #FFF;
+  opacity: 0.02;
+  font-family: Playfair Display;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 550px);
+  transform: translateX(-50%);
 }
 .benefits__row {
   display: flex;
@@ -601,6 +616,23 @@ select {
   font-style: normal;
 }
 
+.appartments {
+  position: relative;
+}
+.appartments::before {
+  content: "III";
+  color: #FFF;
+  opacity: 0.02;
+  font-family: Playfair Display;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  right: calc(50% + 550px);
+  transform: translateX(50%);
+}
 .appartments__title {
   margin-bottom: 88px;
 }
@@ -713,6 +745,21 @@ select {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::before {
+  content: "IV";
+  color: #FFF;
+  opacity: 0.02;
+  font-family: Playfair Display;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.15;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 550px);
+  transform: translateX(-50%);
 }
 .video__link {
   position: relative;
@@ -755,14 +802,34 @@ select {
 
 .section-map {
   padding: 180px 0;
+  position: relative;
+}
+.section-map::before {
+  content: "V";
+  color: #FFF;
+  opacity: 0.02;
+  font-family: Playfair Display;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 1;
+  position: absolute;
+  top: 180px;
+  right: calc(50% + 550px);
+  transform: translateX(50%);
 }
 .section-map__title {
   margin-bottom: 88px;
+  position: relative;
+  z-index: 2;
 }
 
 .map {
   height: 368px;
   background-color: #626262;
+  position: relative;
+  z-index: 2;
 }
 
 .feedback {
