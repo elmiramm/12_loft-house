@@ -747,6 +747,19 @@ select {
   background-color: #626262;
 }
 
+.feedback {
+  padding-bottom: 180px;
+}
+.feedback__title {
+  margin-bottom: 38px;
+}
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
 .social {
   display: flex;
   gap: 36px;
