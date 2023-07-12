@@ -960,6 +960,29 @@ select {
   .benefits__item {
     min-width: 192px;
   }
+  .title {
+    font-size: 28px;
+  }
+  .appartments__title {
+    margin-bottom: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards__item {
+    width: 100%;
+  }
+  .cards__item-img {
+    width: 100%;
+  }
+  .cards__item-title {
+    font-size: 18px;
+    left: 25px;
+    bottom: 25px;
+  }
 }
 @media (max-width: 520px) {
   .intro__title {
