@@ -7,9 +7,10 @@
 		#242B33 90.10%
 		), 
 		linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%), 
-		url(../img/cta-bg.jpg),
-		50% / cover no-repeat, 
-		#C4C4C4;
+		url(../img/cta-bg.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	
 		&__title {
 			margin-bottom: 17px;

@@ -99,6 +99,28 @@
 			bottom: 25px;
 		}
 	}
+	.cta {
+		padding: 50px 0;
+		&__inner {
+			display: flex;
+			flex-direction: column;
+		}
+		&__form {
+			display: flex;
+			flex-direction: column;
+		}
+		.form {
+			&__privacy {
+				order: 4;
+			}
+			&__input {
+				min-width: 200px;
+			}
+		}
+		.btn {
+			min-width: 200px;
+		}
+	}
 }
 // @media (max-width: 880px) {
 
