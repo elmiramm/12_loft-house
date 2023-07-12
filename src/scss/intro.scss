@@ -3,7 +3,10 @@
 	margin-top: -126px;
 	height: 840px;
 	
-	background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../img/intro-bg.jpg), lightgray 50% / cover no-repeat;
+	background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(../img/intro-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	.container {
 		height: 100%;
 		display: flex;
