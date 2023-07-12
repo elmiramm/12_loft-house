@@ -70,40 +70,6 @@ if (document.querySelector('.slider-section__body')) {
 window.onload = function () {
 	document.addEventListener('click', documentActions);
 
-	//-------Active links on Page--------
-	const page = document.querySelector('.page');
-	if (page.classList.contains("about")) {
-		const about = document.querySelectorAll('.menu__list-link').forEach(elem => {
-			if (elem.textContent === "About") {
-				elem.classList.add('active-header-link');
-			}
-		})
-	}
-	if (page.classList.contains("gallery")) {
-		const gallery = document.querySelectorAll('.menu__list-link').forEach(elem => {
-			if (elem.textContent === "Gallery") {
-				elem.classList.add('active-header-link');
-			}
-		})
-	}
-	if (page.classList.contains("contact")) {
-		const contact = document.querySelectorAll('.menu__list-link').forEach(elem => {
-			if (elem.textContent === "Contact") {
-				elem.classList.add('active-header-link');
-			}
-		})
-	}
-	if (page.classList.contains("blog-page")) {
-		const contact = document.querySelectorAll('.menu__list-link').forEach(elem => {
-			if (elem.textContent === "Blog") {
-				elem.classList.add('active-header-link');
-			}
-		})
-	}
-	//-------Active links on Page-End-------
-
-
-
 	//------Действия-при-кликах------
 	function documentActions(e) {
 		const targetElement = e.target;
@@ -111,13 +77,20 @@ window.onload = function () {
 		// ---------Если кликнули на бургер---------
 		if (targetElement.classList.contains('burger') || targetElement.closest('.burger')) {
 
-			const elem = targetElement.classList.contains('burger') ? targetElement : targetElement.closest('.burger');
+			const elem = targetElement.classList.contains('burger')
+				? targetElement
+				: targetElement.closest('.burger');
 			elem.classList.toggle('active-burger');
 
 			const menuBody = document.querySelectorAll('.menu');
 			menuBody.forEach(item => {
 				item.classList.toggle('menu--open');
-			})
+			});
+
+			const body = document.querySelector('body');
+			if (body) {
+				body.classList.toggle('no-scroll');
+			}
 		}
 		// -------Если кликнули на бургер-End----------
 	}

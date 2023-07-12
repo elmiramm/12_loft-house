@@ -57,6 +57,23 @@
 			gap: 10px;
 		}
 	}
+	.benefits {
+		&::before {
+			display: none;
+		}
+		padding: 50px 0;
+		&__row {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+			gap: 40px 30px;
+		}
+		&__item-icon {
+			font-size: 60px;
+		}
+		&__item {
+			min-width: 192px;
+		}
+	}
 }
 // @media (max-width: 880px) {
 
@@ -88,6 +105,16 @@
 // @media (max-width: $bp480) {
 	
 // }
-// @media (max-width: $bp320) {
-	
-// }
+@media (max-width: $bp320) {
+	.benefits {
+		&__item {
+			width: 150px;
+		}
+		&__row {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+}

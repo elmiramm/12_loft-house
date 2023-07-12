@@ -374,6 +374,10 @@ select {
   font: inherit;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -583,6 +587,7 @@ select {
 .benefits {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 .benefits::before {
   content: "II";
@@ -938,6 +943,23 @@ select {
     justify-content: center;
     gap: 10px;
   }
+  .benefits {
+    padding: 50px 0;
+  }
+  .benefits::before {
+    display: none;
+  }
+  .benefits__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
+  .benefits__item-icon {
+    font-size: 60px;
+  }
+  .benefits__item {
+    min-width: 192px;
+  }
 }
 @media (max-width: 520px) {
   .intro__title {
@@ -953,5 +975,16 @@ select {
   .intro__contacts-icon {
     font-size: 15px;
     gap: 5px;
+  }
+}
+@media (max-width: 319.98px) {
+  .benefits__item {
+    width: 150px;
+  }
+  .benefits__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }

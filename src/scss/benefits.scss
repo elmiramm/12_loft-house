@@ -1,6 +1,7 @@
 .benefits {
 	padding: 120px 0;
 	position: relative;
+	overflow: hidden;
 	&::before {
 		content: "II";
 		@include decorNumber;
