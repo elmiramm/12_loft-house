@@ -1,6 +1,7 @@
 .video {
 	text-align: center;
 	position: relative;
+	overflow: hidden;
 	&::before {
 		content: "IV";
 		@include decorNumber;

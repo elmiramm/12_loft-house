@@ -757,6 +757,7 @@ select {
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .video::before {
   content: "IV";
@@ -966,6 +967,9 @@ select {
   .title {
     font-size: 28px;
   }
+  .appartments::before {
+    display: none;
+  }
   .appartments__title {
     margin-bottom: 30px;
   }
@@ -1005,6 +1009,14 @@ select {
   }
   .cta .btn {
     min-width: 200px;
+  }
+  .video::before {
+    display: none;
+  }
+  .video__link::before {
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
   }
 }
 @media (max-width: 520px) {

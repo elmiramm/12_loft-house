@@ -78,6 +78,9 @@
 		font-size: 28px;
 	}
 	.appartments {
+		&::before {
+			display: none;
+		}
 		&__title {
 			margin-bottom: 30px;
 		}
@@ -119,6 +122,18 @@
 		}
 		.btn {
 			min-width: 200px;
+		}
+	}
+	.video {
+		&::before {
+			display: none;
+		}
+		&__link {
+			&::before {
+				width: 80px;
+				height: 80px;
+				font-size: 80px;
+			}
 		}
 	}
 }
