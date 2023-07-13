@@ -1027,6 +1027,24 @@ select {
   .section-map__title {
     margin-bottom: 30px;
   }
+  .feedback {
+    padding-bottom: 50px;
+  }
+  .feedback__title {
+    margin-bottom: 30px;
+  }
+  .feedback__form {
+    grid-template-columns: 1fr;
+  }
+  .feedback .form__privacy {
+    grid-row: 4/5;
+  }
+  .feedback .form__input {
+    min-width: 200px;
+  }
+  .feedback .btn {
+    min-width: 200px;
+  }
 }
 @media (max-width: 520px) {
   .intro__title {

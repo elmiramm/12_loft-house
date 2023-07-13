@@ -145,6 +145,27 @@
 			margin-bottom: 30px;
 		}
 	}
+	.feedback {
+		padding-bottom: 50px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__form {
+			grid-template-columns: 1fr;
+		}
+		.form__privacy {
+			grid-row: 4/5;
+		}
+		.form {
+			&__input {
+				min-width: 200px;
+			}
+		}
+		.btn {
+			min-width: 200px;
+		}
+	}
+
 }
 // @media (max-width: 880px) {
 
