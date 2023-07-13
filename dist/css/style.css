@@ -1018,6 +1018,15 @@ select {
     height: 80px;
     font-size: 80px;
   }
+  .section-map {
+    padding: 50px 0;
+  }
+  .section-map::before {
+    display: none;
+  }
+  .section-map__title {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 520px) {
   .intro__title {
